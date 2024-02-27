@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  
+  <button onclick="
+  haile()
+  if(x==='rock')
+  {
+  result='tie'
+  }
+  else if(x==='paper')
+  {
+   result='you lose'
+  }
+  else{
+  result='you win'
+  }
+  alert(`you pick rock, computer pick ${x}   ${result}!`)
+  ">rock</button>
+  
+  <button onclick="
+  haile()
+  if(x==='paper')
+  {
+  result='tie'
+  }
+  else if(x==='scissors')
+  {
+   result='you lose'
+  }
+  else{
+  result='you win'
+  }
+  alert(`you pick paper, computer pick ${x}   ${result}!`)
+  ">paper</button>
+  
+  
+  <button onclick="
+  haile()
+  if(x==='scissors')
+  {
+  result='tie'
+  }
+  else if(x==='rock')
+  {
+   result='you lose'
+  }
+  else{
+  result='you win'
+  }
+  alert(`you pick scissors, computer pick ${x}   ${result}!`)
+  ">scissors</button>
+  
+  
+  
+  <script >
+    function haile()
+    {
+      
+      let y=Math.random()
+  if(y>0&&y<=1/3)
+  {
+  x='rock'
+  }
+else if(y>1/3&&y<=1/2)
+  {
+  x='paper'
+  }
+  else{
+  x='scissors'
+  }
+
+    }
+    
+  </script>
+  
+  
+</body>
+</html>
